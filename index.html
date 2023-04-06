@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bg Change</title>
+</head>
+<body>
+    <div class="btn">
+        <div class="btns" id="btn1" onclick="change('white')"></div>
+        <div class="btns" id="btn2" onclick="change('red')"></div>
+        <div class="btns" id="btn3" onclick="change('blue')"></div>
+        <div class="btns" id="btn4" onclick="change('black')"></div>
+    </div>
+
+    <p id="par"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut est corporis asperiores nemo neque accusantium rerum. Quo nobis perspiciatis aliquam modi, laudantium sunt doloribus, commodi dolore atque esse quia quaerat, molestias adipisci alias quos suscipit corrupti ad. Voluptate magnam, quibusdam soluta magni in placeat ducimus nesciunt sun Lorem ipsum dolor sit amet consectetur adipisicing elit. A beatae pariatur totam quo recusandae tenetur veritatis illum! Minima delectus accusamus adipisci explicabo perferendis facilis corrupti vero doloribus nulla dolores! Commodi facilis laboriosam, distinctio sunt voluptatem facere perferendis minus totam non. Ipsam porro eaque consectetur, explicabo maiores distinctio voluptatem nisi eius earum ex nemo voluptatibus repudiandae dolorum repellendus iure dolor delectus deleniti suscipit ea natus eos nostrum officiis mollitia veniam. Quis voluptate qui debitis fugiat asperiores, doloremque ex architecto aut veniam, distinctio laboriosam voluptates non eos et, itaque provident pariatur necessitatibus incidunt iusto. Qui reprehenderit mollitia magni. Iste ducimus saepe laboriosam eius quos, facere reprehenderit ab tempore nam, vitae sint quam sapiente nobis nemo exercitationem error culpa! Recusandae, itaque! Odio, cumque distinctio ratione beatae doloremque sint perferendis porro nihil voluptates quam veritatis dignissimos similique voluptate, iure delectus tempora hic iusto sed? Neque sapiente, commodi libero praesentium quae veritatis </p>
+
+    <script>
+        function change(color){
+
+            if(color=='black'){
+                let text=document.getElementById("par");
+                text.style.color= 'white';
+            }
+            else{
+                let text=document.getElementById("par");
+                text.style.color= 'black';
+            }
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+
+</body>
+</html>
